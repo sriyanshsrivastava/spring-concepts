@@ -1,0 +1,196 @@
+# -------------------------
+# Java / JVM artifacts
+# -------------------------
+# compiled classes / packaged output
+*.class
+*.jar
+*.war
+*.ear
+
+# JVM crash / hs logs
+hs_err_pid*
+replay_pid*
+hs_err_pid*.log
+
+# -------------------------
+# Build tools: Maven
+# -------------------------
+# Maven build output
+target/
+# Maven temporary files/backups sometimes created by plugins
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+dependency-reduced-pom.xml
+release.properties
+buildNumber.properties
+.mvn/timing.properties
+
+# Keep the Maven Wrapper jar/properties (committed) — do NOT ignore if you want reproducible builds
+# (If you don't use the maven wrapper, these entries harmlessly match nothing)
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+# -------------------------
+# Build tools: Gradle
+# -------------------------
+.gradle/
+# Gradle build output
+build/
+# Keep the Gradle wrapper jar/properties (committed)
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# -------------------------
+# IDEs & editors
+# -------------------------
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# If you want to keep code styles or shared project settings, selectively un-ignore them
+# e.g. !.idea/codeStyles/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/private/
+
+# VS Code
+.vscode/
+
+# Editor temp files
+*~
+*.swp
+*.swo
+*.swn
+
+# -------------------------
+# OS files
+# -------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# -------------------------
+# Logs / runtime data
+# -------------------------
+# general logs
+*.log
+logs/
+*.out
+*.err
+# Spring Boot default file (if you create one during dev)
+spring.log
+
+# -------------------------
+# Test & coverage outputs
+# -------------------------
+# Surefire, Failsafe, JUnit
+surefire-reports/
+failsafe-reports/
+test-results/
+# Coverage
+jacoco.exec
+coverage/
+coverage-report/
+
+# -------------------------
+# Generated / transient sources
+# -------------------------
+target/generated-sources/
+build/generated/
+out/
+generated/
+
+# -------------------------
+# Databases and local runtime data
+# -------------------------
+# H2, Derby, SQLite, etc.
+*.db
+*.mv.db
+*.h2.db
+*.sqlite
+*.sqlite3
+derby.log
+*.derby
+
+# -------------------------
+# Keys, certs, keystores (usually keep out of VCS)
+# -------------------------
+# (uncomment if you ever add keys locally)
+# *.jks
+# *.keystore
+# *.pem
+# *.p12
+
+# -------------------------
+# Environment & secret files (OPTIONAL — commented out)
+# -------------------------
+# Uncomment these if you ever store secrets locally and want them ignored.
+# .env
+# .env.local
+# application-local.properties
+# application-local.yml
+# secret-*.properties
+
+# To keep sample configs in repo and ignore real ones, use naming convention:
+# commit: application-example.properties  -> ignore: application.properties
+# application.properties
+# application.yml
+
+# -------------------------
+# Docker / Containers
+# -------------------------
+# sensitive docker override often used locally
+docker-compose.override.yml
+# docker volumes and runtime artifacts
+docker-compose.*.yml
+
+# -------------------------
+# Misc / Node (if any project uses frontend)
+# -------------------------
+# node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+dist/
+build/
+
+# -------------------------
+# Misc backups, temp, caches
+# -------------------------
+*.tmp
+*.bak
+*.backup
+.cache/
+.cache-*/
+
+# -------------------------
+# CI / IDE caches (optional)
+# -------------------------
+# JetBrains caches/system (if you ever accidentally commit some)
+.idea/.name
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+.idea/modules.xml
+.idea/compiler.xml
+
+# -------------------------
+# Helpful exclusions for accidental bulky files
+# -------------------------
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
