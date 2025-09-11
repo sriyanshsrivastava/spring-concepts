@@ -1,11 +1,9 @@
 package com.sriyanshsrivastava.spring.core.controller;
 
-
 import com.sriyanshsrivastava.spring.core.model.Product;
 import com.sriyanshsrivastava.spring.core.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
